@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate_tables": "babel-node ./src/server/model/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,9 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
-    "pg": "^7.12.1"
+    "path": "^0.12.7",
+    "pg": "^7.12.1",
+    "pug": "^2.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.6.3",
