@@ -9,8 +9,10 @@ const MigrateTables = async (isDone) => {
     if (isDone) { isDone(); }
     process.exit(0);
   } catch (error) {
-    // console.log(error)
+    // console.log(error);
   }
 };
 
-export default MigrateTables;
+(async () => {
+  await MigrateTables();
+})();

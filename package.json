@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/app.js",
-    "migrate_tables": "babel-node ./src/server/model/index.js"
+    "migrate_tables": "babel-node ./src/server/model/migrations/migrate_tables.js"
   },
   "repository": {
     "type": "git",
